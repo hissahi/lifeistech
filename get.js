@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function fetchDataAndDisplay() {
     // データを取得して表に表示
-    fetch('get_app')
+    fetch('http://lifeistech.starfree.jp/system/php/get.php')
         .then(response => response.json())
         .then(data => {
             const postTable = document.getElementById('postTable');
